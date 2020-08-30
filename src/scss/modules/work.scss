@@ -1,0 +1,612 @@
+.work {
+  // margin-top: 48px;
+  .work__wrapper {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(38, 43, 63, 0.93) 0%,
+      #262b3f 100%
+    );
+  }
+  .work__body {
+    position: relative;
+    @include jucc();
+    padding: 0% 0% 6% 0%;
+    min-height: 1100px;
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      min-height: 950px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      min-height: 1140px;
+      flex-direction: column;
+      @include jucs();
+      @include alic();
+    }
+  }
+  .work__head {
+    @include jucc();
+    flex: 0 1 100%;
+    @media (min-width: 0px) and (max-width: $media) {
+      height: 164px;
+    }
+
+    .create-pro__head {
+      flex: 0 1 100%;
+      padding: 3.7% 0% 0% 0%;
+
+      @media (min-width: $media+1px) and (max-width: 1085px) {
+        padding: 0% 0% 0% 0%;
+      }
+      @media (min-width: 0px) and (max-width: $media) {
+        padding: 7% 8% 0% 8%;
+      }
+
+      .create-pro-head__title {
+        padding: 0 0 4%;
+        @media (min-width: $media) and (max-width: 1085px) {
+          font-size: 20px;
+          padding: 0% 5% 0% 5%;
+        }
+        span {
+          @media (min-width: $media) and (max-width: 1085px) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .work__plaha {
+      background: #2f3347;
+      border-radius: 90px;
+      width: 328px;
+      height: 45px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      color: #ffffff;
+      @include center();
+      opacity: 0.7;
+      position: relative;
+      @include anim(0.2s);
+      &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+      @media (min-width: $media+1px) and (max-width: 1085px) {
+        font-size: 14px;
+      }
+
+      @media (min-width: 0px) and (max-width: $media) {
+        font-size: 9px;
+        width: 180px;
+        height: 32px;
+      }
+
+      &:after {
+        content: "";
+        background-color: #2f3347;
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        top: 100%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%) rotate(45deg);
+        @media (min-width: 0px) and (max-width: $media) {
+          display: none;
+        }
+      }
+    }
+  }
+  .work__slider {
+    width: 1112px;
+    position: relative;
+    @include jucc();
+    height: 630px;
+    @media (min-width: 1086px) and (max-width: 1248px) {
+      width: 1000px;
+      height: 630px;
+    }
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      width: 750px;
+      height: 630px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      width: 308px;
+      height: 781px;
+      margin: 10% 0% 0% 0%;
+    }
+  }
+}
+
+// ====================================================
+//                  slider-work
+// ====================================================
+
+.slider-work {
+  width: 1112px;
+  height: 630px;
+
+  @media (min-width: 1086px) and (max-width: 1248px) {
+    width: 1000px;
+    height: 630px;
+  }
+  @media (min-width: $media+1px) and (max-width: 1085px) {
+    width: 750px;
+    height: 630px;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    width: 308px;
+    height: 781px;
+  }
+}
+
+.slider-work__slide {
+  width: 1112px;
+  height: 630px;
+  background: #363c52;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  // @include fdc();
+  padding: 5% 5% 3% 63.5%;
+  position: relative;
+  // @include alis();
+  @include jucs();
+  @media (min-width: 1086px) and (max-width: 1248px) {
+    width: 1000px;
+    height: 630px;
+    padding: 5% 5% 3% 55%;
+  }
+  @media (min-width: $media+1px) and (max-width: 1085px) {
+    width: 750px;
+    height: 630px;
+    padding: 5% 5% 3% 55%;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    width: 308px;
+    height: 781px;
+    padding: 90% 5% 3% 5%;
+  }
+
+  .ws__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #ffffff;
+    text-align: left;
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      font-size: 18px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      font-size: 16px;
+    }
+  }
+
+  .ws__text1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    color: #ffffff;
+    opacity: 0.9;
+    position: relative;
+    padding: 0px 0px 0px 28px;
+    margin: 3% 0% 0% 0%;
+    @include alic();
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      font-size: 12px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      padding: 0px 0px 0px 18px;
+      font-size: 11px;
+    }
+
+    .ws__icon1 {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 50%;
+      left: 0%;
+      transform: translate(-50%, -50%);
+      opacity: 0.6;
+      @media (min-width: 0px) and (max-width: $media) {
+        width: 10px;
+        height: 10px;
+        text-align: left;
+      }
+    }
+  }
+
+  .ws__plaha {
+    width: 353px;
+    height: 113px;
+    border-radius: 5px;
+    padding: 0px 0px 0px 35px;
+    margin: 45px 0px 0px 0px;
+    position: relative;
+    @include center();
+    text-align: left;
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      width: 282px;
+      height: 93px;
+      padding: 0px 5px 0px 25px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      width: 266px;
+      height: 85px;
+      padding: 0px 19px 0px 20px;
+      margin: 19px 0px 0px 0px;
+    }
+
+    .ws__text2 {
+      padding: 5% 0% 0% 0%;
+      span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        color: #ffffff;
+        opacity: 0.8;
+        position: relative;
+        text-align: left;
+        z-index: 2;
+        @media (min-width: $media+1px) and (max-width: 1085px) {
+          font-size: 12px;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          font-size: 11px;
+        }
+        big {
+          font-family: Montserrat-SemiBold;
+        }
+      }
+    }
+  }
+  .ws__img-plaha1 {
+    position: absolute;
+    opacity: 0.5;
+    top: 20%;
+    left: 7%;
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      width: 15px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      left: 5%;
+      width: 15px;
+    }
+  }
+  .ws__img-plaha2 {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    opacity: 0.5;
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      width: 15px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      width: 15px;
+      left: 12%;
+    }
+  }
+  .ws__img-plaha3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+  }
+  .ws__text3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #ffffff;
+    padding: 44px 0px 0px 0px;
+    text-align: left;
+
+    @media (min-width: 0px) and (max-width: $media) {
+      padding: 21px 0px 0px 0px;
+    }
+  }
+
+  .ws__text4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 140%;
+    color: #ffffff;
+    opacity: 0.6;
+    padding: 10px 0px 0px 0px;
+    overflow: hidden;
+    text-align: left;
+    height: 90px;
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      font-size: 11px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      font-size: 11px;
+      padding: 10px 10px 0px 0px;
+    }
+  }
+
+  .ws__text5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 140%;
+    color: #ffffff;
+    opacity: 0.6;
+    position: relative;
+    padding: 0px 0px 0px 28px;
+    text-align: left;
+    margin-bottom: 10px;
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      font-size: 11px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      padding: 0px 0px 0px 12px;
+      font-size: 11px;
+      line-height: 1.4;
+    }
+
+    .ws__img-text5 {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      transform: translate(0%, 0%);
+      @media (min-width: 0px) and (max-width: $media) {
+        width: 7px;
+        height: 7px;
+        transform: translate(0%, 80%);
+      }
+    }
+  }
+  .ws__text6 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: left;
+    color: #ffffff;
+    padding: 26px 0px 12px 0px;
+    @media (min-width: 0px) and (max-width: $media) {
+      padding: 16px 0px 12px 0px;
+    }
+  }
+
+  .ws__galery {
+    width: 563px;
+    height: 488px;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+    @media (min-width: 1086px) and (max-width: 1248px) {
+      width: 466px;
+      height: 350px;
+    }
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      width: 356px;
+      height: 360px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      width: 272px;
+      height: 240px;
+      top: 4%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .ws-column1__body {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      @include jucb();
+    }
+    .ws-column1__high {
+      @include center();
+
+      @media (min-width: 0px) and (max-width: $media) {
+        border-radius: 5px;
+        width: 272px;
+        height: 173px;
+      }
+
+      .slider-high__slide {
+        width: 563px;
+        height: 358px;
+        position: relative;
+
+        @media (min-width: 1086px) and (max-width: 1248px) {
+          width: 363px;
+          height: 200px;
+        }
+        @media (min-width: $media+1px) and (max-width: 1085px) {
+          width: 356px;
+          height: 200px;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          width: 272px;
+          height: 173px;
+          border-radius: 5px;
+          .bg {
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    .ws-column1__low {
+      @include jucb();
+      @include alie();
+      width: 100%;
+      height: 100px;
+      @media (min-width: 0px) and (max-width: $media) {
+        height: 50px;
+      }
+      .column1-low__item {
+        width: 176px;
+        height: 100px;
+        @media (min-width: 1086px) and (max-width: 1248px) {
+          width: 146px;
+          height: 83px;
+        }
+        @media (min-width: $media+1px) and (max-width: 1085px) {
+          width: 109px;
+          height: 83px;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          width: 85px;
+          height: 50px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.arrows-slider-work {
+  flex: 0 1 100%;
+  @include juca();
+  padding: 0% 0% 0% 0%;
+  &__arrow {
+    position: relative;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    top: 50%;
+    border-radius: 50%;
+    background: linear-gradient(92.69deg, #e74063 0%, #755cdb 100%);
+    @include anim(0.2s);
+    @media (min-width: $media+1px) and (max-width: 1085px) {
+      width: 30px;
+      height: 30px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      width: 20px;
+      height: 20px;
+      top: 104%;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 50%;
+      left: 50%;
+      border-bottom: 2px solid #ffff;
+      border-left: 2px solid #ffff;
+      @include anim(0.2s);
+      @media (min-width: $media+1px) and (max-width: 1085px) {
+        width: 6px;
+        height: 6px;
+      }
+      @media (min-width: 0px) and (max-width: $media) {
+        width: 6px;
+        height: 6px;
+      }
+    }
+    &:hover {
+      &:after {
+        border-bottom: 1px solid #262b3f;
+        border-left: 1px solid #262b3f;
+      }
+    }
+
+    &_prev {
+      left: 0%;
+      transform: translate(-50%, -50%);
+      @media (min-width: 0px) and (max-width: $media) {
+        left: 34%;
+      }
+      &:after {
+        transform: translate(-35%, -50%) rotate(45deg);
+      }
+    }
+
+    &_next {
+      right: 0%;
+      transform: translate(50%, -50%);
+      @media (min-width: 0px) and (max-width: $media) {
+        right: 34%;
+      }
+      &:after {
+        transform: translate(-70%, -50%) rotate(-135deg);
+      }
+    }
+  }
+}
+
+.work__slider {
+  .slick-dots {
+    top: 110%;
+    left: 49%;
+    @media (min-width: 0px) and (max-width: $media) {
+      top: 101.3%;
+      left: 48%;
+    }
+  }
+  .slick-dots li button {
+    list-style: none;
+    background-color: transparent;
+  }
+
+  .slick-dots li {
+    color: transparent !important;
+    display: none;
+  }
+  .slick-dots li.slick-active {
+    position: relative;
+    display: flex;
+
+    button {
+      color: #755cdb;
+      color: linear-gradient(92.63deg, #e74063 0%, #755cdb 100%);
+      display: flex;
+      font-family: Montserrat-SemiBold;
+      font-style: normal;
+      font-size: 40px;
+      line-height: 130%;
+      @media (min-width: 0px) and (max-width: $media) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .slider-invitation__mark {
+    top: 108%;
+    left: 89%;
+    transform: translate(80%, 0%);
+    @media (min-width: 0px) and (max-width: $media) {
+      left: 354%;
+    }
+  }
+  .slider-invitation__mark1 {
+    top: 0%;
+    left: 51.5%;
+    transform: translate(246%, 136%);
+    @media (min-width: 0px) and (max-width: $media) {
+      left: 318%;
+    }
+  }
+  .slider-invitation__mark3 {
+    top: 0%;
+    left: 0%;
+    transform: translate(-137%, 0%);
+    @media (min-width: 0px) and (max-width: $media) {
+      left: -316%;
+    }
+  }
+}
